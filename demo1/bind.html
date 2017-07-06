@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VUEJS2 - DEMO 1 - BIND</title>
+  </head>
+  <body>
+    <div id="main">
+      <input type="text" v-model="info">
+      <p v-bind:title="info">Texto de relleno {{ info }} </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js" ></script>
+    <script>
+      new Vue({
+        el: '#main',
+        data: {
+          info: ''
+        }
+      });
+    </script>
+  </body>
+</html>
